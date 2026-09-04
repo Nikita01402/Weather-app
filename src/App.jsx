@@ -36,7 +36,8 @@ function App() {
   <img src="https://cdn-icons-png.flaticon.com/128/3767/3767039.png" alt="weather-logo" className="cloud-icon"/>Weather App</h1>
 
       <SearchBar onSearch={fetchWeather} />
-      {loading && <Loader />}
+      {loading && Loader />}
+
       {weather && <WeatherCard data={weather} />}
     </div>
   );
